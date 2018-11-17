@@ -1,10 +1,15 @@
 {
-  "name": "Enhanced Github",
-  "short_name": "Enhanced Github",
+  "name": "Codepuran",
+  "short_name": "Codepuran",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Display repo size, size of each file, download link and option to copy file contents",
+  "description": "Download Single Files and Copy Source Of File From Github Repos",
   "author": "Akshay Pethani",
+  
+  "icons": { "16": "16-16.png",
+           "48": "48-48.png",
+          "128": "128-128.png" },
+  
 
   "permissions": [
     "*://github.com/*",
