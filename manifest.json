@@ -1,0 +1,20 @@
+{
+  "name": "Enhanced Github",
+  "short_name": "Enhanced Github",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Display repo size, size of each file, download link and option to copy file contents",
+  "author": "Akshay Pethani",
+
+  "permissions": [
+    "*://github.com/*",
+    "webNavigation",
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "run_at": "document_end",
+    "js": [ "jquery-3.2.1.min.js", "inject.js" ]
+  }]
+}
